@@ -1,19 +1,11 @@
 import streamlit as st
-import os, sys, pymongo
-from llama_index.embeddings.huggingface import HuggingFaceEmbedding
-from llama_index.vector_stores.mongodb import MongoDBAtlasVectorSearch
-from llama_index.core import VectorStoreIndex
-from llama_index.llms.llama_api import LlamaAPI
-from llama_index.core import Settings
-from llama_index.core import StorageContext
-from llama_index.core.memory import ChatMemoryBuffer
-
-
-st.title("Ava - Sui/Move Expert")
+st.title("AelfDocs")
 
 # Load Settings
 
 # Change system path to root direcotry
+import os, sys, pymongo
+
 sys.path.insert(0, '../')
 
 ATLAS_URI = st.secrets["ATLAS_URI"]
@@ -24,8 +16,8 @@ else:
     print("ATLAS_URI Connection string found:", ATLAS_URI)
 
 # Define DB variables
-DB_NAME = 'ava'
-COLLECTION_NAME = 'sui'
+DB_NAME = 'aelfdocs'
+COLLECTION_NAME = 'docs'
 INDEX_NAME = 'idx_embedding'
 
 # LlamaIndex will download embeddings models as needed
@@ -36,13 +28,20 @@ os.environ['LLAMA_INDEX_CACHE_DIR'] = os.path.join(os.path.abspath('../'), 'cach
 mongodb_client = pymongo.MongoClient(ATLAS_URI)
 
 # Setup Embedding Model
+from llama_index.embeddings.huggingface import HuggingFaceEmbedding
+from llama_index.vector_stores.mongodb import MongoDBAtlasVectorSearch
+from llama_index.core import VectorStoreIndex
+from llama_index.llms.gemini import Gemini
+from llama_index.core import Settings
+from llama_index.core import StorageContext
+from llama_index.core.memory import ChatMemoryBuffer
 
 embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 Settings.embed_model = embed_model
 
 # Setup LLM
 
-llm = LlamaAPI(api_key=st.secrets["LLAMA_API_KEY"])
+llm = Gemini(api_key=st.secrets["GOOGLE_API_KEY"], model="models/gemini-1.5-flash-latest")
 Settings.llm = llm
 
 # Connect Llama-index and MongoDB Atlas
@@ -61,9 +60,7 @@ chat_engine = index.as_chat_engine(
     chat_mode="context",
     memory=memory,
     system_prompt=(
-        """Your name is Ava and you are a sui blockchain expert. 
-        You offer help regarding all sorts of issue related to 
-        the sui blockchain and move programming language."""
+        """Your name is Gandalf and you are an Aelf blockchain documentation expert"""
     )
 )
 

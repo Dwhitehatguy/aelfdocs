@@ -1381,22 +1381,6 @@ torch = ">=2.1.2,<3.0.0"
 transformers = {version = ">=4.37.0,<5.0.0", extras = ["torch"]}
 
 [[package]]
-name = "llama-index-llms-llama-api"
-version = "0.1.4"
-description = "llama-index llms llama api integration"
-optional = false
-python-versions = ">=3.9,<4.0"
-files = [
-    {file = "llama_index_llms_llama_api-0.1.4-py3-none-any.whl", hash = "sha256:b42f9789f02320fa7b2a965a8befaf541fec0ab56e1ae5b5f048fdefa628beb4"},
-    {file = "llama_index_llms_llama_api-0.1.4.tar.gz", hash = "sha256:63448112246a0f997bf59b04e4c935b229116cff54a244b4bda29ae79ac6107e"},
-]
-
-[package.dependencies]
-llama-index-core = ">=0.10.11.post1,<0.11.0"
-llama-index-llms-openai = ">=0.1.6,<0.2.0"
-llamaapi = ">=0.1.36,<0.2.0"
-
-[[package]]
 name = "llama-index-llms-openai"
 version = "0.1.26"
 description = "llama-index llms openai integration"
@@ -1534,22 +1518,6 @@ files = [
 
 [package.dependencies]
 llama-index-core = ">=0.10.29"
-
-[[package]]
-name = "llamaapi"
-version = "0.1.36"
-description = "Llama API python SDK"
-optional = false
-python-versions = ">=3.9,<4.0"
-files = [
-    {file = "llamaapi-0.1.36-py3-none-any.whl", hash = "sha256:ec22534acf5f2d6adf7cff953e7c8d0621d0dfded94ea9377913648c41d3b7e9"},
-    {file = "llamaapi-0.1.36.tar.gz", hash = "sha256:e001f43d84a1906cb8136a787d31798b5201b37ab73cef464bcb53e61e688749"},
-]
-
-[package.dependencies]
-aiohttp = ">=3.8.5,<4.0.0"
-nest-asyncio = ">=1.5.6,<2.0.0"
-requests = ">=2.27.1,<3.0.0"
 
 [[package]]
 name = "llamaindex-py-client"
@@ -4223,4 +4191,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "2fa35333cc1b0ecdd7d19781d836965de2fa66cc9601b1ea95943c837ce49f83"
+content-hash = "70650682fec442cc8e01620e89f0565166ea11771d6c81572e733b8734f14d8d"

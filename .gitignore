@@ -26,3 +26,4 @@ TestResults.xml
 # ava/ava_backend/resources/*
 #Pycache
 __pycache__/
+aelfdocs_ui/.streamlit/secrets.toml

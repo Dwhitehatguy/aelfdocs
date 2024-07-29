@@ -64,7 +64,7 @@ storage_context = StorageContext.from_defaults(vector_store=vector_store)
 
 # """ Read JSON Documents """
 
-json_data_file = './aelfdocs/aelfdocs_backend/resources/all_json/output.json'
+json_data_file = 'aelfdocs_backend/resources/aelf_docs.json'
 json_docs = JSONReader(levels_back=0).load_data(json_data_file)
 
 print (f"Loaded {len(json_docs)} chunks from '{json_data_file}'")
