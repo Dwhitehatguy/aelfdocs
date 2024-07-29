@@ -55,7 +55,7 @@ chat_engine = index.as_chat_engine(
     chat_mode="context",
     memory=memory,
     system_prompt=(
-        """Your name is Gandalf and you are an Aelf blockchain documentation expert"""
+        """Your name is Gandalf and you are an Aelf blockchain documentation expert!"""
     )
 )
 
