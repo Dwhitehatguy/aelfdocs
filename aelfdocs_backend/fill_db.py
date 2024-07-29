@@ -23,6 +23,7 @@ COLLECTION_NAME = 'docs'
 INDEX_NAME = 'idx_embedding'
 
 # Set where embeddings model will be downloaded
+import os
 os.environ['LLAMA_INDEX_CACHE_DIR'] = os.path.join(os.path.abspath('../'), 'cache')
 
 # Connect to mongodb

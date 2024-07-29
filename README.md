@@ -20,7 +20,7 @@ Then, install dependencies: `poetry install`
 Populate your environment variables
 
 ```
-    cp .streamlit/example.secrets.toml secrets.toml
+    cp .streamlit/example.secrets.toml .streamlit/secrets.toml
 ```
 
 Enter your google api key in secrets.toml!
