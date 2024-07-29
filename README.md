@@ -4,8 +4,6 @@ AelfDocs is a RAG enabled model for the Aelf blockchain documentation
 
 ## Technologies
 
-This application was brought to life using the following technologies
-
 1. Atlas MongoDB
 2. Llama Index
 3. Google's Gemini
