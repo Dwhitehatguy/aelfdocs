@@ -15,7 +15,7 @@ Clone this repo: `git clone https://github.com/Dwhitehatguy/aelfdocs ; cd aelfdo
 
 Then, install dependencies: `poetry install`
 
-## Run Ava
+## Run AelfDocs
 
 Populate your environment variables
 
