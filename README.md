@@ -2,6 +2,8 @@
 
 AelfDocs is a RAG-enabled chat model for the Aelf blockchain documentation. This is to help developers understand the aelf blockchain better.
 
+- [Read project's write-up](https://docs.google.com/document/d/1VRRnNzpAlYGCbKqTI3AqgeOMXc_NPqcxCpwm4x5NhSg/edit?usp=sharing)
+
 ## Technologies
 
 1. Atlas MongoDB
