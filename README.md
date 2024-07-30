@@ -1,6 +1,12 @@
 # AelfDocs
 
-AelfDocs is a RAG enabled model for the Aelf blockchain documentation
+AelfDocs is a RAG-enabled chat model for the Aelf blockchain documentation. This is to help developers understand the aelf blockchain better.
+
+- [Read project's write-up](https://docs.google.com/document/d/1VRRnNzpAlYGCbKqTI3AqgeOMXc_NPqcxCpwm4x5NhSg/edit?usp=sharing)
+- [Visit live app](https://aelfdocs.streamlit.app)
+
+## Demo
+![AelfDocs at work](assets/ajibola-1.png "AelfDocs demo 1")
 
 ## Technologies
 
@@ -25,4 +31,7 @@ Populate your environment variables
 
 Enter your google api key in secrets.toml!
 
-Then, run: `poetry shell ; streamlit run aelfdocs/aelfdocs_ui/AelfDocs.py`
+Then, run:
+```
+    poetry shell ; streamlit run aelfdocs/aelfdocs_ui/AelfDocs.py
+```
