@@ -1,6 +1,6 @@
 # AelfDocs
 
-AelfDocs is a RAG enabled model for the Aelf blockchain documentation
+AelfDocs is a RAG-enabled chat model for the Aelf blockchain documentation. This is to help developers understand the aelf blockchain better.
 
 ## Technologies
 
