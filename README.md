@@ -25,4 +25,7 @@ Populate your environment variables
 
 Enter your google api key in secrets.toml!
 
-Then, run: `poetry shell ; streamlit run aelfdocs/aelfdocs_ui/AelfDocs.py`
+Then, run:
+```
+    poetry shell ; streamlit run aelfdocs/aelfdocs_ui/AelfDocs.py
+```
