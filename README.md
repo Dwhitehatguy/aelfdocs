@@ -6,7 +6,7 @@ AelfDocs is a RAG-enabled chat model for the Aelf blockchain documentation. This
 - [Visit live app](https://aelfdocs.streamlit.app)
 
 ## Demo
-![AelfDocs at work](assets/ajibola-1.png "AelfDocs demo 1")
+![AelfDocs at work](assets/ajibola-2.png "AelfDocs demo 1")
 
 ## Technologies
 
